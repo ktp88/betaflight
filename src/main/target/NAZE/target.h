@@ -100,9 +100,11 @@
 #define ACC_BMA280_ALIGN        CW0_DEG
 #define ACC_MPU6500_ALIGN       CW0_DEG
 
+/*
 #define BARO
 #define USE_BARO_MS5611 // needed for Flip32 board
 #define USE_BARO_BMP280
+*/
 
 /*
 #define MAG
@@ -124,8 +126,8 @@
 #define USE_SOFTSERIAL2
 #define SERIAL_PORT_COUNT       4
 
-#define SOFTSERIAL1_RX_PIN      PA6 // PWM 5
-#define SOFTSERIAL1_TX_PIN      PA7 // PWM 6
+#define SOFTSERIAL1_RX_PIN      PA7 // PWM 5
+#define SOFTSERIAL1_TX_PIN      PA6 // PWM 6
 
 #define SOFTSERIAL2_RX_PIN      PB0 // PWM 7
 #define SOFTSERIAL2_TX_PIN      PB1 // PWM 8
@@ -158,3 +160,22 @@
 
 #define USABLE_TIMER_CHANNEL_COUNT 14
 #define USED_TIMERS             ( TIM_N(1) | TIM_N(2) | TIM_N(3) | TIM_N(4) )
+
+#undef USE_PWM
+#undef USE_SERIAL_RX
+#undef USE_SERIALRX_CRSF       // Team Black Sheep Crossfire protocol
+#undef USE_SERIALRX_IBUS       // FlySky and Turnigy receivers
+#undef USE_SERIALRX_SBUS       // Frsky and Futaba receivers
+#undef USE_SERIALRX_SPEKTRUM   // SRXL, DSM2 and DSMX protocol
+#undef USE_SERIALRX_SUMD       // Graupner Hott protocol
+#undef USE_SERIALRX_SUMH       // Graupner legacy protocol
+#undef USE_SERIALRX_XBUS       // JR
+
+#undef LED_STRIP
+#undef USE_TELEMETRY_HOTT
+#undef USE_TELEMETRY_LTM
+#undef USE_TELEMETRY_SMARTPORT
+#undef USE_SERVOS
+#undef USE_BLACKBOX
+
+//#define USE_TELEMETRY_CRSF
