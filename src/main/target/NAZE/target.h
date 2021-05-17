@@ -100,17 +100,13 @@
 #define ACC_BMA280_ALIGN        CW0_DEG
 #define ACC_MPU6500_ALIGN       CW0_DEG
 
-/*
 #define BARO
 #define USE_BARO_MS5611 // needed for Flip32 board
 #define USE_BARO_BMP280
-*/
 
-/*
 #define MAG
 #define USE_MAG_HMC5883
 #define MAG_HMC5883_ALIGN       CW180_DEG
-*/
 
 //#define SONAR
 //#define SONAR_TRIGGER_PIN       PB0
@@ -177,5 +173,8 @@
 #undef USE_TELEMETRY_SMARTPORT
 #undef USE_SERVOS
 #undef USE_BLACKBOX
+
+#define CMS
+#define USE_MSP_DISPLAYPORT
 
 //#define USE_TELEMETRY_CRSF
